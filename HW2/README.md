@@ -2,6 +2,8 @@
 
 Completed as part of the GCI World 2026 program.
 
+> *Note:* The assignment problem, notebook structure, and dataset were provided by GCI World 2026. This repository documents my completed work and the programming and data-analysis skills I practiced through the assignment.
+
 ## Topic
 
 Data cleaning and analysis using Python Pandas.
