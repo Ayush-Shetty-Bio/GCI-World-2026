@@ -4,33 +4,39 @@ Completed as part of the GCI World 2026 program.
 
 > *Note:* The assignment problem, notebook structure, and dataset were provided by GCI World 2026. This repository documents my completed work and the programming and data-analysis skills I practiced through the assignment.
 
-## Topic
+## Overview
 
-Data cleaning and analysis using Python Pandas.
+This assignment focused on data cleaning and analysis using Python and Pandas.
+
+The task involved analyzing the MyAnimeList dataset and calculating the mean Score for each anime Type, followed by sorting the results in descending order.
 
 ## Task
 
-Compute the mean Score for each Type in the provided dataset and return the results in descending order.
+Using the prepared MyAnimeList dataset:
 
-## Skills Practiced
+1. Group the data according to anime Type.
+2. Calculate the mean Score for each type.
+3. Sort the calculated means from highest to lowest.
+4. Return the result as a Pandas Series.
+
+## Concepts Practiced
 
 - Python
 - Pandas
 - DataFrames
 - Data cleaning
 - Data manipulation
-- GroupBy and aggregation
+- groupby()
+- Aggregation
 - Mean calculation
 - Sorting
-- Function-based problem solving
-- Testing and validation
+- Working with numerical and categorical data
 
-## What I Learned
+## Approach
 
-This exercise strengthened my understanding of working with structured datasets using Pandas, including grouping, aggregation, and sorting data.
+The solution uses Pandas operations to group the dataset by the Type column, calculate the mean Score for each group, and sort the resulting values in descending order.
 
-These computational skills are transferable to biological and scientific datasets, including molecular, genomic, and experimental data.
+The core approach was:
 
-## Assignment Context
-
-The problem statement, notebook structure, and dataset were provided as part of GCI World 2026. This repository documents my completed work and learning progress.
+```python
+anime_data_extracted.groupby("Type")["Score"].mean().sort_values(ascending=False)
